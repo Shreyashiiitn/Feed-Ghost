@@ -34,3 +34,9 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+multiple input field hai to react hook form user karo , har ek field ko alag state me manage karna padega 
+react hook form ek ho object ke andar control deta hai , 10 state nahi banai padegi hume jab hum ye use karege 
+
+lucid react gives us lot of icons 
