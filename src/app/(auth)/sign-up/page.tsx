@@ -38,10 +38,6 @@ import { signUpSchema } from '@/Schemas/signUpSchema';
 
 
 
-
-
-
-
 export default function SignUpForm() {
   const [username, setUsername] = useState('');
   const [usernameMessage, setUsernameMessage] = useState('');
