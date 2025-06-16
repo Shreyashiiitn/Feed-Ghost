@@ -4,6 +4,7 @@ import  { connectToDB } from '@/lib/dbConnect';
 import { User } from 'next-auth';
 import UserModel from '@/Model/User';
 import mongoose from 'mongoose';
+import { TruckElectric } from 'lucide-react';
 
 export async function GET(request : Request) {
     await connectToDB()
@@ -40,13 +41,17 @@ export async function GET(request : Request) {
 
         return Response.json(
             {
-                success : false , 
-                message : user[0].messages
+                success : true , 
+                messages : user[0].messages
             }, 
             { status : 200 }
          )
     } catch (error) {
-        
+        console.error(error);
+        return Response.json(
+            { success: false, message: "Something went wrong!" },
+            { status: 500 }
+        );
     } 
 
 }
