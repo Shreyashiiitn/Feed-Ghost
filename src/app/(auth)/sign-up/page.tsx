@@ -102,7 +102,7 @@ export default function SignUpForm() {
 
       toast.success(response.data.message); // ✅ New toast
 
-      router.replace(`/verify/${username}`);
+      router.replace(`/verify/${data.username}`);
     } catch (error) {
       console.error('Error during sign-up:', error);
       const axiosError = error as AxiosError<ApiResponse>;
